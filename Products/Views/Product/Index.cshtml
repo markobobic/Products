@@ -1,0 +1,60 @@
+﻿<head>
+    <link rel="stylesheet" href="~/Content/DataTable.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href=" https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css" />
+    <link rel="stylesheet" href="~/Content/DataTableProducts.css" />
+</head>
+<br />
+<br />
+<div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="mTitle">Product</h4>
+                <button id="close-modal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="btn btn-success" style="margin-left:-15px;color:white" data-toggle="modal"
+   data-target="#modalAdd"
+   onclick="PopupForm('@Url.Action("Add","Product")')"><i class="fa fa-plus"></i> Add Product </a>
+<div id="user_content"></div>
+<div class="row">
+    <div class="table-responsive">
+        <table id="productsTable" width="100%">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Manafacturer</th>
+                    <th>Supplier</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+            <tbody class="table table-bordered"></tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <script src="~/Scripts/DataTableProducts.js"></script>
+    <script src="~/Scripts/SubmitForm.js"></script>
+    
+
+   
+}

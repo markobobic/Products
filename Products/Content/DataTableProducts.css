@@ -1,0 +1,13 @@
+﻿#productsTable {
+    -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
+    zoom: 0.9; /* Other non-webkit browsers */
+    zoom: 90%; /* Webkit browsers */
+}
+
+.btn-success {
+    background-color: #2E0077 !important;
+}
+
+#productsTable_paginate {
+    margin-right: 1.2%;
+}

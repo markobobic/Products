@@ -1,0 +1,60 @@
+﻿<head>
+    <link href="~/Content/Dasboard.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Sidenavbar.css" rel="stylesheet" />
+    <link href="~/Content/ScrollBar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<aside class="side-nav text-center" id="show-side-navigation">
+    <div class="heading cent text-center">
+     <img id="dashboardPic" class="avatar img-circle img-thumbnailc align-content-center" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="">
+        <div class=" text-center">
+            <h3><a id="fullName" href="@Url.Action("Index", "Home")">User User</a></h3>
+            <p id="position">Admin</p>
+        </div>
+    </div>
+    <ul class="categories">
+      <li>List of products</li>
+    </ul>
+</aside>
+<nav class="navbar-fixed-top navbar-expand-sm" id="navbarl">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <i class="fa fa-align-left"></i>
+            </button>
+            <a class="navbar-brand" href="/Product/Index">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown" style="color:aqua">
+                    <a href="#" class="dropdown-toggle" id="dropdownFullName" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white"><i style="font-size:15pt" ; class="fas fa-sign-out-alt"></i></a>
+                    <ul class="dropdown-menu ">
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    @@media (max-width: 767px) {
+        aside {
+            display: none;
+        }
+    }
+
+
+    .links {
+        margin-right: 5% !important;
+    }
+</style>
+
+
+
